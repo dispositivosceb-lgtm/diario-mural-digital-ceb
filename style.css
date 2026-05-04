@@ -1,0 +1,135 @@
+/* Importación de fuente similar a Google Sans */
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Product Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Área de Contenido (Toda la pantalla) */
+.viewport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#display-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.8s ease-in-out;
+    display: block;
+}
+
+/* Etiqueta de la foto - Blanco con sombra oscura */
+.photo-label {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 1.8rem;
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    z-index: 5;
+    font-weight: 400;
+}
+
+/* Barra Inferior Flotante y Redonda */
+.footer-container {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1400px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bar {
+    background-color: #2b5cfd;
+    height: 100px;
+    width: 100%;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 60px 0 125px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* Contenedor del Logo rotado 45 grados */
+.logo-container {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    /* Rotación de 45 grados para el fondo */
+    transform: translateY(-50%) rotate(45deg);
+    width: 110px;
+    height: 110px;
+    z-index: 110;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* Mayor redondeo solicitado (estilo squircle) */
+    border-radius: 32%;
+    border: 5px solid #2b5cfd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Logo interior (rotado de forma inversa para estar derecho) */
+.main-logo {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    transform: rotate(-45deg);
+}
+
+/* Deslizador de Frases */
+.text-slider {
+    flex-grow: 1;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.phrase {
+    font-size: 2.8rem;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.8s ease-in-out, opacity 0.6s ease;
+}
+
+/* Transición vertical */
+.slide-out { transform: translateY(100%); opacity: 0; }
+.slide-in-top { transform: translateY(-100%); opacity: 0; }
+
+/* Reloj */
+.clock-section {
+    font-size: 2.8rem;
+    font-weight: bold;
+    min-width: 180px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}

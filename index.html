@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador Colegio Estrella de Belén</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="viewport">
+        <img id="display-photo" src="" alt="Cargando...">
+        <div class="photo-label">
+            <span id="header-text"></span>
+        </div>
+    </main>
+
+    <div class="footer-container">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo" class="main-logo" onerror="this.src='https://via.placeholder.com/120?text=Logo'">
+        </div>
+
+        <footer class="footer-bar">
+            <div class="text-slider">
+                <div id="dynamic-text" class="phrase">Colegio estrella de belén</div>
+            </div>
+
+            <div class="clock-section">
+                <span id="time-display">00:00</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
