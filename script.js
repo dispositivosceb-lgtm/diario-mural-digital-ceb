@@ -1,6 +1,6 @@
 const fotos = [
-    { nombre: "foto1.jpg", etiqueta: "Celebraciones Dia Del Libro" },
-    { nombre: "foto2.jpg", etiqueta: "Celebraciones Dia Del Libro" },
+    { nombre: "foto1.jpg", etiqueta: "Celebraciones Día Del Libro" },
+    { nombre: "foto2.jpg", etiqueta: "Celebraciones Día Del Libro" },
     { nombre: "foto3.jpg", etiqueta: "Licenciatura 2026" },
     { nombre: "foto4.jpg", etiqueta: "Licenciatura 2026" },
     { nombre: "foto5.jpg", etiqueta: "Licenciatura 2026" },
@@ -11,7 +11,7 @@ const fotos = [
     { nombre: "foto10.jpg", etiqueta: "Celebramos la neurodiversidad" }
 ];
 
-const frases = ["Colegio estrella de belén", "Compartiendo la buena nueva"];
+const frases = ["Colegio Estrella de Belén", "Compartiendo La Buena Nueva"];
 
 let currentFotoIdx = 0;
 let currentFraseIdx = 0;
